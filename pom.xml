@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.slavamashkov.bouncingball/com.slavamashkov.bouncingball.HelloApplication
+                            <mainClass>com.slavamashkov.bouncingball/com.slavamashkov.test.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

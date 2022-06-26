@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="804.0" prefWidth="750.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="650.0" prefHeight="804.0" prefWidth="100.0" style="-fx-background-color: #175554;">
+         <children>
+            <ToggleButton fx:id="leftEngineToggleButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Left Engine" />
+            <ToggleButton fx:id="rightEngineToggleButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Right Engine" />
+            <ToggleButton fx:id="leftEngineErrorToggleButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Error Left Engine" />
+            <ToggleButton fx:id="rightEngineErrorToggleButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Error Right Engine" />
+         </children>
+      </VBox>
+      <Pane fx:id="system_name_pane" prefHeight="61.0" prefWidth="650.0">
+         <children>
+            <Label fx:id="system_name" alignment="CENTER" prefHeight="41.0" prefWidth="89.0" text="ELEC" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="upper_info_pane" layoutY="67.0" prefHeight="161.0" prefWidth="650.0">
+         <children>
+            <Pane fx:id="bat1" layoutX="140.0" prefHeight="161.0" prefWidth="75.0">
+               <children>
+                  <Pane layoutY="59.0" prefHeight="103.0" prefWidth="75.0">
+                     <children>
+                        <Label layoutX="32.0" layoutY="16.0" text="V" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutY="16.0" prefHeight="30.0" prefWidth="32.0" text="28" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Polygon fill="#00ff25" layoutX="53.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="87.0" layoutX="51.0" layoutY="16.0" smooth="false" width="4.0" />
+                        <Label layoutX="32.0" layoutY="45.0" text="A" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutY="45.0" prefHeight="30.0" prefWidth="32.0" text="-15" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Rectangle arcHeight="1.0" arcWidth="1.0" height="34.0" layoutX="30.0" layoutY="26.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+                  <Label alignment="CENTER" layoutX="30.0" layoutY="26.0" prefHeight="34.0" prefWidth="45.0" text="BAT" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="30.0" prefHeight="26.0" prefWidth="45.0" text="1" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="bat3" layoutX="225.0" prefHeight="161.0" prefWidth="75.0">
+               <children>
+                  <Pane layoutY="59.0" prefHeight="103.0" prefWidth="75.0">
+                     <children>
+                        <Label layoutX="32.0" layoutY="16.0" text="V" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutY="16.0" prefHeight="30.0" prefWidth="32.0" text="28" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Polygon fill="#00ff25" layoutX="53.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="87.0" layoutX="51.0" layoutY="16.0" smooth="false" width="4.0" />
+                        <Label layoutX="32.0" layoutY="45.0" text="A" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutY="45.0" prefHeight="30.0" prefWidth="32.0" text="-15" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Rectangle arcHeight="1.0" arcWidth="1.0" height="34.0" layoutX="30.0" layoutY="26.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+                  <Label alignment="CENTER" layoutX="30.0" layoutY="26.0" prefHeight="34.0" prefWidth="45.0" text="BAT" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="30.0" prefHeight="26.0" prefWidth="45.0" text="3" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="bat2" layoutX="320.0" prefHeight="161.0" prefWidth="75.0">
+               <children>
+                  <Pane layoutY="59.0" prefHeight="103.0" prefWidth="75.0">
+                     <children>
+                        <Label layoutX="32.0" layoutY="16.0" text="V" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutY="16.0" prefHeight="30.0" prefWidth="32.0" text="28" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Polygon fill="#00ff25" layoutX="53.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="87.0" layoutX="51.0" layoutY="16.0" smooth="false" width="4.0" />
+                        <Label layoutX="32.0" layoutY="45.0" text="A" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutY="45.0" prefHeight="30.0" prefWidth="32.0" text="-15" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Rectangle arcHeight="1.0" arcWidth="1.0" height="34.0" layoutX="30.0" layoutY="26.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+                  <Label alignment="CENTER" layoutX="30.0" layoutY="26.0" prefHeight="34.0" prefWidth="45.0" text="BAT" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="30.0" prefHeight="26.0" prefWidth="45.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="bat4" layoutX="410.0" prefHeight="161.0" prefWidth="75.0">
+               <children>
+                  <Pane layoutY="59.0" prefHeight="103.0" prefWidth="75.0">
+                     <children>
+                        <Label layoutX="32.0" layoutY="16.0" text="V" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutY="16.0" prefHeight="30.0" prefWidth="32.0" text="28" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Polygon fill="#00ff25" layoutX="53.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="87.0" layoutX="51.0" layoutY="16.0" smooth="false" width="4.0" />
+                        <Label layoutX="32.0" layoutY="45.0" text="A" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutY="45.0" prefHeight="30.0" prefWidth="32.0" text="-15" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Rectangle arcHeight="1.0" arcWidth="1.0" height="34.0" layoutX="30.0" layoutY="26.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+                  <Label alignment="CENTER" layoutX="30.0" layoutY="26.0" prefHeight="34.0" prefWidth="45.0" text="BAT" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="30.0" prefHeight="26.0" prefWidth="45.0" text="4" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="middle_info_pane" layoutY="228.0" prefHeight="186.0" prefWidth="650.0">
+         <children>
+            <Pane fx:id="firstRow" prefHeight="34.0" prefWidth="650.0">
+               <children>
+                  <Pane layoutX="30.0" prefHeight="34.0" prefWidth="280.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="100.0" layoutY="15.0" smooth="false" width="30.0" />
+                        <Rectangle arcHeight="1.0" arcWidth="1.0" height="34.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                        <Rectangle arcHeight="1.0" arcWidth="1.0" height="34.0" layoutX="130.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="150.0" />
+                        <Label alignment="CENTER" prefHeight="34.0" prefWidth="50.0" text="L" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="50.0" prefHeight="34.0" prefWidth="50.0" text="DC" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="130.0" prefHeight="34.0" prefWidth="75.0" text="L DC" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="205.0" prefHeight="34.0" prefWidth="75.0" text="ESS" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="340.0" prefHeight="34.0" prefWidth="280.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="150.0" layoutY="15.0" smooth="false" width="30.0" />
+                        <Rectangle arcHeight="1.0" arcWidth="1.0" height="34.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="150.0" />
+                        <Label alignment="CENTER" prefHeight="34.0" prefWidth="75.0" text="R DC" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="75.0" prefHeight="34.0" prefWidth="75.0" text="ESS" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Rectangle arcHeight="1.0" arcWidth="1.0" height="34.0" layoutX="180.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                        <Label alignment="CENTER" layoutX="180.0" prefHeight="34.0" prefWidth="50.0" text="R" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="230.0" prefHeight="34.0" prefWidth="50.0" text="DC" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="secondRow" layoutY="34.0" prefHeight="118.0" prefWidth="650.0">
+               <children>
+                  <Pane layoutX="30.0" prefHeight="118.0" prefWidth="280.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="26.0" layoutX="161.0" smooth="false" width="4.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="75.0" layoutY="26.0" smooth="false" width="90.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="88.0" layoutX="75.0" layoutY="30.0" smooth="false" width="4.0" />
+                        <Polygon fill="#00ff25" layoutX="89.0" layoutY="95.0" points="-26.0, -10.0, 2.0, -10.0, -12.0, -32.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="63.0" layoutY="61.0" smooth="false" width="28.0" />
+                        <Label layoutX="209.0" text="V" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="177.0" prefHeight="30.0" prefWidth="32.0" text="28" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="134.0" layoutY="33.0" text="A" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="91.0" layoutY="33.0" prefHeight="30.0" prefWidth="44.0" text="145" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="9.0" layoutY="70.0" text="TRU1" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="340.0" prefHeight="118.0" prefWidth="280.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="121.0" layoutY="26.0" smooth="false" width="84.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="26.0" layoutX="121.0" smooth="false" width="4.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="100.0" layoutX="201.0" layoutY="30.0" smooth="false" width="4.0" />
+                        <Polygon fill="#00ff25" layoutX="215.0" layoutY="95.0" points="-26.0, -10.0, 2.0, -10.0, -12.0, -32.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="189.0" layoutY="61.0" smooth="false" width="28.0" />
+                        <Label layoutX="85.0" text="V" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="53.0" prefHeight="30.0" prefWidth="32.0" text="28" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="254.0" layoutY="33.0" text="A" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="209.0" layoutY="33.0" prefHeight="30.0" prefWidth="44.0" text="145" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="133.0" layoutY="70.0" text="TRU2" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Rectangle arcHeight="5.0" fill="WHITE" height="33.0" layoutX="36.0" layoutY="85.0" smooth="false" width="4.0" />
+                        <Polygon fill="WHITE" layoutX="50.0" layoutY="95.0" points="-26.0, -10.0, 2.0, -10.0, -12.0, -32.0" />
+                        <Rectangle arcHeight="5.0" fill="WHITE" height="4.0" layoutX="23.0" layoutY="61.0" smooth="false" width="28.0" />
+                        <Label layoutX="-34.0" layoutY="70.0" text="TRU3" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="thirdRow" layoutY="152.0" prefHeight="34.0" prefWidth="650.0">
+               <children>
+                  <Pane layoutX="30.0" prefHeight="34.0" prefWidth="280.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="100.0" layoutY="15.0" smooth="false" width="30.0" />
+                        <Rectangle arcHeight="1.0" arcWidth="1.0" height="34.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                        <Rectangle arcHeight="1.0" arcWidth="1.0" height="34.0" layoutX="130.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="150.0" />
+                        <Label alignment="CENTER" prefHeight="34.0" prefWidth="50.0" text="AC" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="50.0" prefHeight="34.0" prefWidth="50.0" text="ESS" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="130.0" prefHeight="34.0" prefWidth="75.0" text="L " textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="205.0" prefHeight="34.0" prefWidth="75.0" text="AC" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="340.0" prefHeight="34.0" prefWidth="280.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="150.0" layoutY="15.0" smooth="false" width="30.0" />
+                        <Rectangle arcHeight="1.0" arcWidth="1.0" height="34.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="150.0" />
+                        <Rectangle arcHeight="1.0" arcWidth="1.0" height="34.0" layoutX="180.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                        <Label alignment="CENTER" prefHeight="34.0" prefWidth="75.0" text="R" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="75.0" prefHeight="34.0" prefWidth="75.0" text="AC" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="180.0" prefHeight="34.0" prefWidth="50.0" text="AC" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="230.0" prefHeight="34.0" prefWidth="50.0" text="ESS" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="bottom_info_pane" layoutY="414.0" prefHeight="288.0" prefWidth="650.0">
+         <children>
+            <Pane fx:id="elecUnitsConnectionsPane" prefHeight="147.0" prefWidth="650.0">
+               <children>
+                  <Pane fx:id="fromLeftDriveToLeft" opacity="0.0" prefHeight="147.0" prefWidth="650.0">
+                     <children>
+                        <Polygon fill="#00ff25" layoutX="235.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="47.0" layoutX="233.0" layoutY="16.0" smooth="false" width="4.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="93.0" layoutY="61.0" smooth="false" width="144.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="87.0" layoutX="93.0" layoutY="63.0" smooth="false" width="4.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="fromRightDriveToRight" opacity="0.0" prefHeight="147.0" prefWidth="650.0">
+                     <children>
+                        <Polygon fill="#00ff25" layoutX="415.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="47.0" layoutX="413.0" layoutY="16.0" smooth="false" width="4.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="413.0" layoutY="61.0" smooth="false" width="144.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="87.0" layoutX="553.0" layoutY="65.0" smooth="false" width="4.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="fromRightDriveToLeftRight" opacity="0.0" prefHeight="147.0" prefWidth="650.0">
+                     <children>
+                        <Polygon fill="#00ff25" layoutX="415.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="47.0" layoutX="413.0" layoutY="16.0" smooth="false" width="4.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="233.0" layoutY="61.0" smooth="false" width="324.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="87.0" layoutX="553.0" layoutY="65.0" smooth="false" width="4.0" />
+                        <Polygon fill="#00ff25" layoutX="235.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="47.0" layoutX="233.0" layoutY="16.0" smooth="false" width="4.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="fromLeftDriveToLeftRight" opacity="0.0" prefHeight="147.0" prefWidth="650.0">
+                     <children>
+                        <Polygon fill="#00ff25" layoutX="415.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="47.0" layoutX="413.0" layoutY="16.0" smooth="false" width="4.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="93.0" layoutY="61.0" smooth="false" width="324.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="87.0" layoutX="93.0" layoutY="65.0" smooth="false" width="4.0" />
+                        <Polygon fill="#00ff25" layoutX="235.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="47.0" layoutX="233.0" layoutY="16.0" smooth="false" width="4.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="fromApuToLeft" opacity="0.0" prefHeight="147.0" prefWidth="650.0">
+                     <children>
+                        <Polygon fill="#00ff25" layoutX="178.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="155.0" layoutX="176.0" layoutY="16.0" smooth="false" width="4.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="fromApuToRight" opacity="0.0" prefHeight="147.0" prefWidth="650.0">
+                     <children>
+                        <Polygon fill="#00ff25" layoutX="470.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="70.0" layoutX="468.0" layoutY="12.0" smooth="false" width="4.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="176.0" layoutY="82.0" smooth="false" width="296.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="85.0" layoutX="176.0" layoutY="86.0" smooth="false" width="4.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="fromExtToLeft" opacity="0.0" prefHeight="147.0" prefWidth="650.0">
+                     <children>
+                        <Polygon fill="#00ff25" layoutX="178.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="69.0" layoutX="176.0" layoutY="16.0" smooth="false" width="4.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="176.0" layoutY="82.0" smooth="false" width="296.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="91.0" layoutX="468.0" layoutY="86.0" smooth="false" width="4.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="fromExtToRight" opacity="0.0" prefHeight="147.0" prefWidth="650.0">
+                     <children>
+                        <Polygon fill="#00ff25" layoutX="470.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
+                        <Rectangle arcHeight="5.0" fill="#00ff25" height="165.0" layoutX="468.0" layoutY="12.0" smooth="false" width="4.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="leftDriveInfoPane" layoutY="57.0" opacity="0.0" prefHeight="90.0" prefWidth="93.0">
+                     <children>
+                        <Label fx:id="leftDriveVoltageValue" alignment="CENTER_RIGHT" layoutX="18.0" prefHeight="30.0" prefWidth="44.0" text="115" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="leftDriveVoltageSign" layoutX="65.0" text="V" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="leftDrivePercentValue" alignment="CENTER_RIGHT" layoutX="18.0" layoutY="30.0" prefHeight="30.0" prefWidth="44.0" text="30" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="leftDrivePercentSign" layoutX="65.0" layoutY="30.0" text="\%" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="leftDriveFrequencyValue" alignment="CENTER_RIGHT" layoutX="18.0" layoutY="60.0" prefHeight="30.0" prefWidth="44.0" text="400" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="leftDriveFrequencySign" layoutX="65.0" layoutY="60.0" text="HZ" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Pane>
+                  <Pane fx:id="rightDriveInfoPane" layoutX="557.0" layoutY="57.0" opacity="0.0" prefHeight="90.0" prefWidth="93.0">
+                     <children>
+                        <Label fx:id="rightDriveVoltageValue" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="44.0" text="115" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rightDriveVoltageSign" layoutX="47.0" text="V" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rightDrivePercentValue" alignment="CENTER_RIGHT" layoutY="30.0" prefHeight="30.0" prefWidth="44.0" text="30" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rightDrivePercentSign" layoutX="47.0" layoutY="30.0" text="\%" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rightDriveFrequencyValue" alignment="CENTER_RIGHT" layoutY="60.0" prefHeight="30.0" prefWidth="44.0" text="400" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rightDriveFrequencySign" layoutX="47.0" layoutY="60.0" text="HZ" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="elecUnitsPane" layoutY="147.0" prefHeight="147.0" prefWidth="650.0">
+               <children>
+                  <Pane fx:id="leftDrivePane" prefHeight="155.0" prefWidth="128.0">
+                     <children>
+                        <Rectangle fx:id="leftDriveConnection" arcHeight="1.0" arcWidth="1.0" height="40.0" layoutX="89.0" layoutY="37.0" opacity="0.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="4.0" width="12.0" />
+                        <Circle fx:id="leftDriveTransformerCircle" layoutX="94.0" layoutY="23.0" radius="25.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+                        <CubicCurve fx:id="leftDriveTransformerSign" controlX1="-50.0" controlX2="-51.0" controlY1="-30.0" controlY2="30.0" endX="-32.0" layoutX="144.0" layoutY="24.0" opacity="0.0" startX="-68.0" stroke="#00ff25" strokeWidth="2.0" />
+                        <Rectangle fx:id="leftDriveRectangle" arcHeight="1.0" arcWidth="1.0" height="40.0" layoutX="62.0" layoutY="68.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="66.0" />
+                        <Label fx:id="leftDriveLabel" alignment="CENTER" layoutX="61.0" layoutY="73.0" prefHeight="30.0" prefWidth="66.0" text="DRIVE" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="leftGenLabel" layoutX="4.0" layoutY="8.0" prefHeight="30.0" prefWidth="60.0" text="L GEN" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="rightDrivePane" layoutX="522.0" prefHeight="155.0" prefWidth="128.0">
+                     <children>
+                        <Rectangle fx:id="rightDriveConnection" arcHeight="1.0" arcWidth="1.0" height="40.0" layoutX="28.0" layoutY="37.0" opacity="0.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="4.0" width="12.0" />
+                        <Circle fx:id="rightDriveTransformerCircle" layoutX="33.0" layoutY="23.0" radius="25.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+                        <CubicCurve fx:id="rightDriveTransformerSign" controlX1="-50.0" controlX2="-51.0" controlY1="-30.0" controlY2="30.0" endX="-32.0" layoutX="83.0" layoutY="24.0" opacity="0.0" startX="-68.0" stroke="#00FF25" strokeWidth="2.0" />
+                        <Rectangle fx:id="rightDriveRectangle" arcHeight="1.0" arcWidth="1.0" height="40.0" layoutY="68.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="66.0" />
+                        <Label fx:id="rightDriveLabel" alignment="CENTER" layoutY="73.0" prefHeight="30.0" prefWidth="66.0" text="DRIVE" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rightGenLabel" layoutX="66.0" layoutY="8.0" prefHeight="30.0" prefWidth="60.0" text="R GEN" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="apuGenPane" layoutX="128.0" prefHeight="155.0" prefWidth="185.0">
+                     <children>
+                        <Circle fx:id="apuGenCircle" layoutX="50.0" layoutY="47.0" radius="25.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+                        <Label fx:id="apuLabel" alignment="CENTER" layoutX="8.0" layoutY="73.0" prefHeight="30.0" prefWidth="83.0" text="APU" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="genLabel" alignment="CENTER" layoutX="8.0" layoutY="91.0" prefHeight="30.0" prefWidth="83.0" text="GEN" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <CubicCurve fx:id="apuGenTransformerSign" controlX1="-50.0" controlX2="-51.0" controlY1="-30.0" controlY2="30.0" endX="-32.0" layoutX="100.0" layoutY="47.0" opacity="0.0" startX="-68.0" stroke="#00ff25" strokeWidth="2.0" />
+                        <Pane fx:id="apuGenInfoPane" layoutX="76.0" layoutY="2.0" opacity="0.0" prefHeight="90.0" prefWidth="109.0">
+                           <children>
+                              <Label fx:id="apuGenVoltageValue" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="44.0" text="115" textFill="#00ff25">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="apuGenPercentValue" alignment="CENTER_RIGHT" layoutY="30.0" prefHeight="30.0" prefWidth="44.0" text="30" textFill="#00ff25">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="apuGenVoltageSign" layoutX="47.0" text="V" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="apuGenPercentSign" layoutX="47.0" layoutY="30.0" text="\%" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="apuGenFrequencyValue" alignment="CENTER_RIGHT" layoutY="60.0" prefHeight="30.0" prefWidth="44.0" text="400" textFill="#00ff25">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="apuGenFrequencySign" layoutX="47.0" layoutY="60.0" text="HZ" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="extPwrPane" layoutX="337.0" opacity="0.0" prefHeight="155.0" prefWidth="185.0">
+                     <children>
+                        <Rectangle fx:id="extPwrRectangle" arcHeight="5.0" height="50.0" layoutX="107.0" layoutY="23.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="50.0" />
+                        <CubicCurve fx:id="extPwrTransformerSign" controlX1="-50.0" controlX2="-51.0" controlY1="-30.0" controlY2="30.0" endX="-32.0" layoutX="182.0" layoutY="47.0" startX="-68.0" stroke="#00ff25" strokeWidth="2.0" />
+                        <Label fx:id="extLabel" alignment="CENTER" layoutX="91.0" layoutY="73.0" prefHeight="30.0" prefWidth="83.0" text="EXT" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="pwrLabel" alignment="CENTER" layoutX="91.0" layoutY="91.0" prefHeight="30.0" prefWidth="83.0" text="PWR" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="extPwrVoltageValue" alignment="CENTER_RIGHT" layoutX="30.0" layoutY="18.0" prefHeight="30.0" prefWidth="44.0" text="115" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="extPwrVoltageSign" layoutX="76.0" layoutY="18.0" text="V" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="extPwrFrequencyValue" alignment="CENTER_RIGHT" layoutX="30.0" layoutY="48.0" prefHeight="30.0" prefWidth="44.0" text="400" textFill="#00ff25">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="extPwrFrequencySign" layoutX="76.0" layoutY="48.0" text="HZ" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
