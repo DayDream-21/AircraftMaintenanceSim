@@ -1,38 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.ToggleButton?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="804.0" prefWidth="1448.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.slavamashkov.bouncingball.controllers.SSJMainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1618.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.slavamashkov.bouncingball.controllers.SSJMainController">
     <children>
-        <VBox fx:id="buttonsVbox" layoutX="1348.0" prefHeight="804.0" prefWidth="100.0" style="-fx-background-color: #175554;">
+        <VBox fx:id="buttonsVbox" layoutX="1518.0" prefHeight="1000.0" prefWidth="100.0" style="-fx-background-color: #175554;">
             <children>
                 <ToggleButton fx:id="leftEngineToggleButton" mnemonicParsing="false" onAction="#onActionActivateLeftEngine" prefHeight="40.0" prefWidth="100.0" text="Left Engine" />
                 <ToggleButton fx:id="rightEngineToggleButton" mnemonicParsing="false" onAction="#onActionActivateRightEngine" prefHeight="40.0" prefWidth="100.0" text="Right Engine" />
-                <ToggleButton fx:id="leftEngineErrorToggleButton" mnemonicParsing="false" onAction="#onActionErrorLeftEngine" prefHeight="40.0" prefWidth="100.0" text="Error Left Engine" />
-                <ToggleButton fx:id="rightEngineErrorToggleButton" mnemonicParsing="false" onAction="#onActionErrorRightEngine" prefHeight="40.0" prefWidth="100.0" text="Error Right Engine" />
             </children>
         </VBox>
-        <Pane fx:id="systemNamePane" layoutX="698.0" prefHeight="67.0" prefWidth="650.0" style="-fx-background-color: BLACK;">
+        <Pane fx:id="systemNamePane" layoutX="868.0" prefHeight="67.0" prefWidth="650.0">
             <fx:include source="refactor2/system-name-pane.fxml" />
         </Pane>
-        <Pane fx:id="upperInfoPane" layoutX="698.0" layoutY="67.0" prefHeight="161.0" prefWidth="650.0">
+        <Pane fx:id="upperInfoPane" layoutX="868.0" layoutY="67.0" prefHeight="161.0" prefWidth="650.0">
             <fx:include source="refactor2/upper-info-pane.fxml" />
         </Pane>
-        <Pane fx:id="middleInfoPane" layoutX="698.0" layoutY="228.0" prefHeight="186.0" prefWidth="650.0">
+        <Pane fx:id="middleInfoPane" layoutX="868.0" layoutY="228.0" prefHeight="186.0" prefWidth="650.0">
             <fx:include source="refactor2/middle-info-pane.fxml" />
         </Pane>
-        <Pane fx:id="bottomInfoPane" layoutX="698.0" layoutY="414.0" prefHeight="288.0" prefWidth="650.0">
+        <Pane fx:id="bottomInfoPane" layoutX="868.0" layoutY="414.0" prefHeight="288.0" prefWidth="650.0">
             <fx:include fx:id="fxidBottomInfoPane" source="refactor2/bottom_info/bottom-info-pane.fxml" />
         </Pane>
-      <ImageView fitHeight="804.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="E:\SSJ\Pictures\SWP_OVERHEAD_PANEL_SSJ100_rev03.jpg" />
-         </image>
-      </ImageView>
+        <Pane fx:id="selectionPanel" prefHeight="1000.0" prefWidth="868.0">
+            <fx:include fx:id="fxidSelectionPanel" source="refactor2/selection-panel.fxml" />
+        </Pane>
     </children>
 </AnchorPane>

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.slavamashkov.bouncingball.controllers.SelectorTestController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.slavamashkov.bouncingball.controllers.SelectionPanelController">
    <children>
       <ImageView fitHeight="1000.0" fitWidth="868.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -35,5 +37,10 @@
       <Rectangle fx:id="apuAllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="47.0" layoutX="357.0" layoutY="661.0" onMouseEntered="#apuZoneGlowOn" onMouseExited="#apuZoneGlowOff" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="47.0" />
       <Rectangle fx:id="ratAllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="50.0" layoutX="410.0" layoutY="660.0" onMouseEntered="#ratZoneGlowOn" onMouseExited="#ratZoneGlowOff" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="47.0" />
       <Rectangle fx:id="extAllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="47.0" layoutX="463.0" layoutY="661.0" onMouseEntered="#extZoneGlowOn" onMouseExited="#extZoneGlowOff" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="47.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="647.0" layoutY="648.0" prefHeight="17.0" prefWidth="45.0" text="0.0" textFill="#00ff25">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

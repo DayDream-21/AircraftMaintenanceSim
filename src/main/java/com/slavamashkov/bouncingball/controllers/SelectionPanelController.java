@@ -2,16 +2,18 @@ package com.slavamashkov.bouncingball.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.Group;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Rectangle;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-public class SelectorTestController {
+public class SelectionPanelController {
+    @FXML private UpperInfoPaneController fxidUpperInfoPaneController;
 
+    @FXML private Label batteryVoltageIndicator;
     @FXML private Rectangle invAllowedZone;
     @FXML private Rectangle leftGenAllowedZone;
     @FXML private Rectangle rightGenAllowedZone;
@@ -24,10 +26,9 @@ public class SelectorTestController {
     @FXML private Rectangle bat2AllowedZone;
     @FXML private Rectangle bat3AllowedZone;
     @FXML private Rectangle bat4AllowedZone;
-
     @FXML private Group selectorGroup;
 
-    List<Double> allowedDegrees = Arrays.asList(0.0, 45.0, 90.0, 135.0, 180.0);
+    List<Double> allowedDegrees = Arrays.asList(45.0, 90.0, 135.0, 180.0);
     Iterator<Double> listIterator = allowedDegrees.listIterator();
 
     public void glowOn(Rectangle zone) {
@@ -41,105 +42,115 @@ public class SelectorTestController {
     public void changeDegree(MouseEvent mouseEvent) {
         if (!listIterator.hasNext()) {
             listIterator = allowedDegrees.listIterator();
-            selectorGroup.setRotate(listIterator.next());
+            selectorGroup.setRotate(0.0);
         } else {
             selectorGroup.setRotate(listIterator.next());
         }
     }
 
-    public void bat1zoneGlowOn(MouseEvent mouseEvent) {
+    public double getBatterySelectorPosition() {
+        return selectorGroup.getRotate();
+    }
+
+    public void setBatteryVoltageIndicatorValue(double voltageValue) {
+        batteryVoltageIndicator.setText(String.valueOf(voltageValue));
+    }
+
+
+
+    public void bat1zoneGlowOn() {
         glowOn(bat1AllowedZone);
     }
 
-    public void bat2zoneGlowOn(MouseEvent mouseEvent) {
+    public void bat2zoneGlowOn() {
         glowOn(bat2AllowedZone);
     }
 
-    public void bat3zoneGlowOn(MouseEvent mouseEvent) {
+    public void bat3zoneGlowOn() {
         glowOn(bat3AllowedZone);
     }
 
-    public void bat4zoneGlowOn(MouseEvent mouseEvent) {
+    public void bat4zoneGlowOn() {
         glowOn(bat4AllowedZone);
     }
 
-    public void invZoneGlowOn(MouseEvent mouseEvent) {
+    public void invZoneGlowOn() {
         glowOn(invAllowedZone);
     }
 
-    public void leftGenZoneGlowOn(MouseEvent mouseEvent) {
+    public void leftGenZoneGlowOn() {
         glowOn(leftGenAllowedZone);
     }
 
-    public void rightGenZoneGlowOn(MouseEvent mouseEvent) {
+    public void rightGenZoneGlowOn() {
         glowOn(rightGenAllowedZone);
     }
 
-    public void leftDriveZoneGlowOn(MouseEvent mouseEvent) {
+    public void leftDriveZoneGlowOn() {
         glowOn(leftDriveAllowedZone);
     }
 
-    public void rightDriveZoneGlowOn(MouseEvent mouseEvent) {
+    public void rightDriveZoneGlowOn() {
         glowOn(rightDriveAllowedZone);
     }
 
-    public void apuZoneGlowOn(MouseEvent mouseEvent) {
+    public void apuZoneGlowOn() {
         glowOn(apuAllowedZone);
     }
 
-    public void ratZoneGlowOn(MouseEvent mouseEvent) {
+    public void ratZoneGlowOn() {
         glowOn(ratAllowedZone);
     }
 
-    public void extZoneGlowOn(MouseEvent mouseEvent) {
+    public void extZoneGlowOn() {
         glowOn(extAllowedZone);
     }
 
-    public void bat1zoneGlowOff(MouseEvent mouseEvent) {
+    public void bat1zoneGlowOff() {
         glowOff(bat1AllowedZone);
     }
 
-    public void bat2zoneGlowOff(MouseEvent mouseEvent) {
+    public void bat2zoneGlowOff() {
         glowOff(bat2AllowedZone);
     }
 
-    public void bat3zoneGlowOff(MouseEvent mouseEvent) {
+    public void bat3zoneGlowOff() {
         glowOff(bat3AllowedZone);
     }
 
-    public void bat4zoneGlowOff(MouseEvent mouseEvent) {
+    public void bat4zoneGlowOff() {
         glowOff(bat4AllowedZone);
     }
 
-    public void invZoneGlowOff(MouseEvent mouseEvent) {
+    public void invZoneGlowOff() {
         glowOff(invAllowedZone);
     }
 
-    public void leftGenZoneGlowOff(MouseEvent mouseEvent) {
+    public void leftGenZoneGlowOff() {
         glowOff(leftGenAllowedZone);
     }
 
-    public void rightGenZoneGlowOff(MouseEvent mouseEvent) {
+    public void rightGenZoneGlowOff() {
         glowOff(rightGenAllowedZone);
     }
 
-    public void leftDriveZoneGlowOff(MouseEvent mouseEvent) {
+    public void leftDriveZoneGlowOff() {
         glowOff(leftDriveAllowedZone);
     }
 
-    public void rightDriveZoneGlowOff(MouseEvent mouseEvent) {
+    public void rightDriveZoneGlowOff() {
         glowOff(rightDriveAllowedZone);
     }
 
-    public void apuZoneGlowOff(MouseEvent mouseEvent) {
+    public void apuZoneGlowOff() {
         glowOff(apuAllowedZone);
     }
 
-    public void ratZoneGlowOff(MouseEvent mouseEvent) {
+    public void ratZoneGlowOff() {
         glowOff(ratAllowedZone);
     }
 
-    public void extZoneGlowOff(MouseEvent mouseEvent) {
+    public void extZoneGlowOff() {
         glowOff(extAllowedZone);
     }
 

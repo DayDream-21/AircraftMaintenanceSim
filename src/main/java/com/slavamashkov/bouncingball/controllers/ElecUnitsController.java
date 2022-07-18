@@ -5,7 +5,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.CubicCurve;
 import javafx.scene.shape.Rectangle;
-import static com.slavamashkov.bouncingball.Color.*;
+import static com.slavamashkov.bouncingball.enums.Color.*;
 
 public class ElecUnitsController {
     @FXML private Rectangle leftDriveConnection;

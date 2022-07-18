@@ -1,4 +1,4 @@
-package com.slavamashkov.bouncingball;
+package com.slavamashkov.bouncingball.enums;
 
 public enum Color {
     ACTIVE_COLOR("#00ff25"),
@@ -7,7 +7,7 @@ public enum Color {
 
     public final String hexCode;
 
-    private Color(String hexCode) {
+    Color(String hexCode) {
         this.hexCode = hexCode;
     }
 }

@@ -5,7 +5,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<Pane prefHeight="161.0" prefWidth="650.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<Pane prefHeight="161.0" prefWidth="650.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.slavamashkov.bouncingball.controllers.UpperInfoPaneController">
     <children>
         <Pane fx:id="bat1" layoutX="140.0" prefHeight="161.0" prefWidth="75.0">
             <children>
@@ -16,7 +16,7 @@
                                 <Font size="20.0" />
                             </font>
                         </Label>
-                        <Label alignment="CENTER" layoutY="16.0" prefHeight="30.0" prefWidth="32.0" text="28" textFill="#00ff25">
+                        <Label fx:id="bat1VoltageValue" alignment="CENTER" layoutY="16.0" prefHeight="30.0" prefWidth="32.0" text="21" textFill="#00ff25">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -57,7 +57,7 @@
                                 <Font size="20.0" />
                             </font>
                         </Label>
-                        <Label alignment="CENTER" layoutY="16.0" prefHeight="30.0" prefWidth="32.0" text="28" textFill="#00ff25">
+                        <Label fx:id="bat3VoltageValue" alignment="CENTER" layoutY="16.0" prefHeight="30.0" prefWidth="32.0" text="23" textFill="#00ff25">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -98,7 +98,7 @@
                                 <Font size="20.0" />
                             </font>
                         </Label>
-                        <Label alignment="CENTER" layoutY="16.0" prefHeight="30.0" prefWidth="32.0" text="28" textFill="#00ff25">
+                        <Label fx:id="bat2VoltageValue" alignment="CENTER" layoutY="16.0" prefHeight="30.0" prefWidth="32.0" text="25" textFill="#00ff25">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -139,7 +139,7 @@
                                 <Font size="20.0" />
                             </font>
                         </Label>
-                        <Label alignment="CENTER" layoutY="16.0" prefHeight="30.0" prefWidth="32.0" text="28" textFill="#00ff25">
+                        <Label fx:id="bat4VoltageValue" alignment="CENTER" layoutY="16.0" prefHeight="30.0" prefWidth="32.0" text="28" textFill="#00ff25">
                             <font>
                                 <Font size="20.0" />
                             </font>
