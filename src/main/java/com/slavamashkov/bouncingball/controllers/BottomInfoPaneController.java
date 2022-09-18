@@ -6,6 +6,26 @@ public class BottomInfoPaneController {
     @FXML private ElecUnitsConnectionsController fxidElecUnitsConnectionsController;
     @FXML private ElecUnitsController fxidElecUnitsController;
 
+    private static BottomInfoPaneController instance;
+
+    public BottomInfoPaneController() {
+        instance = this;
+    }
+
+    public static BottomInfoPaneController getInstance() {
+        return instance;
+    }
+
+    public void activateExtPwr() {
+        fxidElecUnitsConnectionsController.activateExtPwrConnection();
+        fxidElecUnitsController.activateExtPwr();
+    }
+
+    public void deactivateExtPwr() {
+        fxidElecUnitsConnectionsController.deactivateExtPwrConnection();
+        fxidElecUnitsController.deactivateExtPwr();
+    }
+
     public void activateLeftEngine() {
         fxidElecUnitsConnectionsController.activateLeftDriveToLeftConnection();
         fxidElecUnitsController.activateLeftEngine();
@@ -28,21 +48,21 @@ public class BottomInfoPaneController {
 
     public void activateErrorLeftEngine() {
         fxidElecUnitsConnectionsController.deactivateLeftDriveToLeftConnection();
-        fxidElecUnitsController.activateErrorLeftEngine();
+        // fxidElecUnitsController.activateErrorLeftEngine();
     }
 
     public void deactivateErrorLeftEngine() {
         fxidElecUnitsConnectionsController.activateLeftDriveToLeftConnection();
-        fxidElecUnitsController.deactivateErrorLeftEngine();
+        // fxidElecUnitsController.deactivateErrorLeftEngine();
     }
 
     public void activateErrorRightEngine() {
         fxidElecUnitsConnectionsController.deactivateRightDriveToRightConnection();
-        fxidElecUnitsController.activateErrorRightEngine();
+        // fxidElecUnitsController.activateErrorRightEngine();
     }
 
     public void deactivateErrorRightEngine() {
         fxidElecUnitsConnectionsController.activateRightDriveToRightConnection();
-        fxidElecUnitsController.deactivateErrorRightEngine();
+        // fxidElecUnitsController.deactivateErrorRightEngine();
     }
 }

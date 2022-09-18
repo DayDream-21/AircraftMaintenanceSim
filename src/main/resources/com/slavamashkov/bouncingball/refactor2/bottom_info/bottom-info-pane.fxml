@@ -4,14 +4,14 @@
 
 <Pane fx:controller="com.slavamashkov.bouncingball.controllers.BottomInfoPaneController" prefHeight="288.0" prefWidth="650.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <Pane fx:id="elecUnitsConnectionsPane" prefHeight="147.0" prefWidth="650.0">
-            <children>
-                <fx:include fx:id="fxidElecUnitsConnections" source="elec-units-connections-pane.fxml" />
-            </children>
-        </Pane>
         <Pane fx:id="elecUnitsPane" layoutY="147.0" prefHeight="147.0" prefWidth="650.0">
             <children>
                 <fx:include fx:id="fxidElecUnits" source="elec-units.fxml" />
+            </children>
+        </Pane>
+        <Pane fx:id="elecUnitsConnectionsPane" prefHeight="147.0" prefWidth="650.0">
+            <children>
+                <fx:include fx:id="fxidElecUnitsConnections" source="elec-units-connections-pane.fxml" />
             </children>
         </Pane>
     </children>

@@ -11,8 +11,6 @@ import java.util.Iterator;
 import java.util.List;
 
 public class SelectionPanelController {
-    @FXML private UpperInfoPaneController fxidUpperInfoPaneController;
-
     @FXML private Label batteryVoltageIndicator;
     @FXML private Rectangle invAllowedZone;
     @FXML private Rectangle leftGenAllowedZone;
@@ -28,131 +26,156 @@ public class SelectionPanelController {
     @FXML private Rectangle bat4AllowedZone;
     @FXML private Group selectorGroup;
 
-    List<Double> allowedDegrees = Arrays.asList(45.0, 90.0, 135.0, 180.0);
-    Iterator<Double> listIterator = allowedDegrees.listIterator();
+    private static final List<Double> allowedDegrees = Arrays.asList(45.0, 90.0, 135.0, 180.0);
+    private Iterator<Double> listIterator = allowedDegrees.listIterator();
 
-    public void glowOn(Rectangle zone) {
-        zone.setOpacity(1.0);
+    boolean isSwitchExtPowButtonPressed = false;
+
+    @FXML private void switchExtPowButton(MouseEvent mouseEvent) {
+        BottomInfoPaneController bottomInfoPaneController = BottomInfoPaneController.getInstance();
+
+        isSwitchExtPowButtonPressed = !isSwitchExtPowButtonPressed;
+
+        if (isSwitchExtPowButtonPressed) {
+            bottomInfoPaneController.activateExtPwr();
+        } else {
+            bottomInfoPaneController.deactivateExtPwr();
+        }
+
     }
 
-    public void glowOff(Rectangle zone) {
-        zone.setOpacity(0.0);
-    }
-
-    public void changeDegree(MouseEvent mouseEvent) {
+    @FXML private void changeDegree(MouseEvent mouseEvent) {
         if (!listIterator.hasNext()) {
             listIterator = allowedDegrees.listIterator();
             selectorGroup.setRotate(0.0);
+            displayBatteryVoltage(selectorGroup.getRotate());
         } else {
             selectorGroup.setRotate(listIterator.next());
+            displayBatteryVoltage(selectorGroup.getRotate());
         }
     }
 
-    public double getBatterySelectorPosition() {
-        return selectorGroup.getRotate();
+    private void displayBatteryVoltage(double rotationDegree) {
+        UpperInfoPaneController controller = UpperInfoPaneController.getInstance();
+
+        if (rotationDegree == 0.0) {
+            batteryVoltageIndicator.setText(String.valueOf(0.0));
+        } else if (rotationDegree == 45.0) {
+            batteryVoltageIndicator.setText(String.valueOf(controller.getBat1Voltage()));
+        } else if (rotationDegree == 90.0) {
+            batteryVoltageIndicator.setText(String.valueOf(controller.getBat2Voltage()));
+        } else if (rotationDegree == 135.0) {
+            batteryVoltageIndicator.setText(String.valueOf(controller.getBat3Voltage()));
+        } else if (rotationDegree == 180.0) {
+            batteryVoltageIndicator.setText(String.valueOf(controller.getBat4Voltage()));
+        } else {
+            // todo
+            // залогировать неподдерживаемое значение селектора
+            batteryVoltageIndicator.setText(String.valueOf(0.0));
+        }
     }
 
-    public void setBatteryVoltageIndicatorValue(double voltageValue) {
-        batteryVoltageIndicator.setText(String.valueOf(voltageValue));
+    private void glowOn(Rectangle zone) {
+        zone.setOpacity(1.0);
     }
 
+    private void glowOff(Rectangle zone) {
+        zone.setOpacity(0.0);
+    }
 
-
-    public void bat1zoneGlowOn() {
+    @FXML private void bat1zoneGlowOn() {
         glowOn(bat1AllowedZone);
     }
 
-    public void bat2zoneGlowOn() {
+    @FXML private void bat2zoneGlowOn() {
         glowOn(bat2AllowedZone);
     }
 
-    public void bat3zoneGlowOn() {
+    @FXML private void bat3zoneGlowOn() {
         glowOn(bat3AllowedZone);
     }
 
-    public void bat4zoneGlowOn() {
+    @FXML private void bat4zoneGlowOn() {
         glowOn(bat4AllowedZone);
     }
 
-    public void invZoneGlowOn() {
+    @FXML private void invZoneGlowOn() {
         glowOn(invAllowedZone);
     }
 
-    public void leftGenZoneGlowOn() {
+    @FXML private void leftGenZoneGlowOn() {
         glowOn(leftGenAllowedZone);
     }
 
-    public void rightGenZoneGlowOn() {
+    @FXML private void rightGenZoneGlowOn() {
         glowOn(rightGenAllowedZone);
     }
 
-    public void leftDriveZoneGlowOn() {
+    @FXML private void leftDriveZoneGlowOn() {
         glowOn(leftDriveAllowedZone);
     }
 
-    public void rightDriveZoneGlowOn() {
+    @FXML private void rightDriveZoneGlowOn() {
         glowOn(rightDriveAllowedZone);
     }
 
-    public void apuZoneGlowOn() {
+    @FXML private void apuZoneGlowOn() {
         glowOn(apuAllowedZone);
     }
 
-    public void ratZoneGlowOn() {
+    @FXML private void ratZoneGlowOn() {
         glowOn(ratAllowedZone);
     }
 
-    public void extZoneGlowOn() {
+    @FXML private void extZoneGlowOn() {
         glowOn(extAllowedZone);
     }
 
-    public void bat1zoneGlowOff() {
+    @FXML private void bat1zoneGlowOff() {
         glowOff(bat1AllowedZone);
     }
 
-    public void bat2zoneGlowOff() {
+    @FXML private void bat2zoneGlowOff() {
         glowOff(bat2AllowedZone);
     }
 
-    public void bat3zoneGlowOff() {
+    @FXML private void bat3zoneGlowOff() {
         glowOff(bat3AllowedZone);
     }
 
-    public void bat4zoneGlowOff() {
+    @FXML private void bat4zoneGlowOff() {
         glowOff(bat4AllowedZone);
     }
 
-    public void invZoneGlowOff() {
+    @FXML private void invZoneGlowOff() {
         glowOff(invAllowedZone);
     }
 
-    public void leftGenZoneGlowOff() {
+    @FXML private void leftGenZoneGlowOff() {
         glowOff(leftGenAllowedZone);
     }
 
-    public void rightGenZoneGlowOff() {
+    @FXML private void rightGenZoneGlowOff() {
         glowOff(rightGenAllowedZone);
     }
 
-    public void leftDriveZoneGlowOff() {
+    @FXML private void leftDriveZoneGlowOff() {
         glowOff(leftDriveAllowedZone);
     }
 
-    public void rightDriveZoneGlowOff() {
+    @FXML private void rightDriveZoneGlowOff() {
         glowOff(rightDriveAllowedZone);
     }
 
-    public void apuZoneGlowOff() {
+    @FXML private void apuZoneGlowOff() {
         glowOff(apuAllowedZone);
     }
 
-    public void ratZoneGlowOff() {
+    @FXML private void ratZoneGlowOff() {
         glowOff(ratAllowedZone);
     }
 
-    public void extZoneGlowOff() {
+    @FXML private void extZoneGlowOff() {
         glowOff(extAllowedZone);
     }
-
-
 }

@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<Pane fx:controller="com.slavamashkov.bouncingball.controllers.ElecUnitsConnectionsController" prefHeight="147.0" prefWidth="650.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<Pane prefHeight="144.0" prefWidth="650.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.slavamashkov.bouncingball.controllers.ElecUnitsConnectionsController">
     <children>
         <Pane fx:id="fromLeftDriveToLeft" opacity="0.0" prefHeight="147.0" prefWidth="650.0">
             <children>
                 <Polygon fill="#00ff25" layoutX="235.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
                 <Rectangle arcHeight="5.0" fill="#00ff25" height="47.0" layoutX="233.0" layoutY="16.0" smooth="false" width="4.0" />
                 <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="93.0" layoutY="61.0" smooth="false" width="144.0" />
-                <Rectangle arcHeight="5.0" fill="#00ff25" height="87.0" layoutX="93.0" layoutY="63.0" smooth="false" width="4.0" />
+                <Rectangle arcHeight="5.0" fill="#00ff25" height="84.0" layoutX="93.0" layoutY="63.0" smooth="false" width="4.0" />
             </children>
         </Pane>
         <Pane fx:id="fromRightDriveToRight" opacity="0.0" prefHeight="147.0" prefWidth="650.0">
@@ -21,7 +22,7 @@
                 <Polygon fill="#00ff25" layoutX="415.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
                 <Rectangle arcHeight="5.0" fill="#00ff25" height="47.0" layoutX="413.0" layoutY="16.0" smooth="false" width="4.0" />
                 <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="413.0" layoutY="61.0" smooth="false" width="144.0" />
-                <Rectangle arcHeight="5.0" fill="#00ff25" height="87.0" layoutX="553.0" layoutY="65.0" smooth="false" width="4.0" />
+                <Rectangle arcHeight="5.0" fill="#00ff25" height="84.0" layoutX="553.0" layoutY="63.0" smooth="false" width="4.0" />
             </children>
         </Pane>
         <Pane fx:id="fromRightDriveToLeftRight" opacity="0.0" prefHeight="147.0" prefWidth="650.0">
@@ -39,7 +40,7 @@
                 <Polygon fill="#00ff25" layoutX="415.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
                 <Rectangle arcHeight="5.0" fill="#00ff25" height="47.0" layoutX="413.0" layoutY="16.0" smooth="false" width="4.0" />
                 <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="93.0" layoutY="61.0" smooth="false" width="324.0" />
-                <Rectangle arcHeight="5.0" fill="#00ff25" height="87.0" layoutX="93.0" layoutY="65.0" smooth="false" width="4.0" />
+                <Rectangle arcHeight="5.0" fill="#00ff25" height="84.0" layoutX="93.0" layoutY="65.0" smooth="false" width="4.0" />
                 <Polygon fill="#00ff25" layoutX="235.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
                 <Rectangle arcHeight="5.0" fill="#00ff25" height="47.0" layoutX="233.0" layoutY="16.0" smooth="false" width="4.0" />
             </children>
@@ -63,13 +64,13 @@
                 <Polygon fill="#00ff25" layoutX="178.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
                 <Rectangle arcHeight="5.0" fill="#00ff25" height="69.0" layoutX="176.0" layoutY="16.0" smooth="false" width="4.0" />
                 <Rectangle arcHeight="5.0" fill="#00ff25" height="4.0" layoutX="176.0" layoutY="82.0" smooth="false" width="296.0" />
-                <Rectangle arcHeight="5.0" fill="#00ff25" height="91.0" layoutX="468.0" layoutY="86.0" smooth="false" width="4.0" />
+                <Rectangle arcHeight="5.0" fill="#00ff25" height="86.0" layoutX="468.0" layoutY="86.0" smooth="false" width="4.0" />
             </children>
         </Pane>
         <Pane fx:id="fromExtToRight" opacity="0.0" prefHeight="147.0" prefWidth="650.0">
             <children>
                 <Polygon fill="#00ff25" layoutX="470.0" layoutY="26.0" points="-8.0, -10.0, 8.0, -10.0, 0.0, -26.0" />
-                <Rectangle arcHeight="5.0" fill="#00ff25" height="165.0" layoutX="468.0" layoutY="12.0" smooth="false" width="4.0" />
+                <Rectangle arcHeight="5.0" fill="#00ff25" height="160.0" layoutX="468.0" layoutY="12.0" smooth="false" width="4.0" />
             </children>
         </Pane>
         <Pane fx:id="leftDriveInfoPane" layoutY="57.0" opacity="0.0" prefHeight="90.0" prefWidth="93.0">

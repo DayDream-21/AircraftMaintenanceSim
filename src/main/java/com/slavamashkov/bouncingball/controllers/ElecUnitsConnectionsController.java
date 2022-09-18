@@ -8,6 +8,28 @@ public class ElecUnitsConnectionsController {
     @FXML private Pane leftDriveInfoPane;
     @FXML private Pane fromRightDriveToRight;
     @FXML private Pane rightDriveInfoPane;
+    @FXML private Pane fromExtToLeft;
+    @FXML private Pane fromExtToRight;
+
+    private static ElecUnitsConnectionsController instance;
+
+    public ElecUnitsConnectionsController() {
+        instance = this;
+    }
+
+    public static ElecUnitsConnectionsController getInstance() {
+        return instance;
+    }
+
+    public void activateExtPwrConnection() {
+        fromExtToLeft.setOpacity(1.0);
+        fromExtToRight.setOpacity(1.0);
+    }
+
+    public void deactivateExtPwrConnection() {
+        fromExtToLeft.setOpacity(0.0);
+        fromExtToRight.setOpacity(0.0);
+    }
 
     public void activateLeftDriveToLeftConnection() {
         leftDriveInfoPane.setOpacity(1.0);

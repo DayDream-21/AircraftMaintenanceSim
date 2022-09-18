@@ -93,36 +93,36 @@
                 </Pane>
             </children>
         </Pane>
-        <Pane fx:id="extPwrPane" layoutX="337.0" opacity="0.0" prefHeight="155.0" prefWidth="185.0">
+        <Pane fx:id="extPwrPane" layoutX="337.0" prefHeight="155.0" prefWidth="185.0">
             <children>
-                <Rectangle fx:id="extPwrRectangle" arcHeight="5.0" height="50.0" layoutX="107.0" layoutY="23.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="50.0" />
-                <CubicCurve fx:id="extPwrTransformerSign" controlX1="-50.0" controlX2="-51.0" controlY1="-30.0" controlY2="30.0" endX="-32.0" layoutX="182.0" layoutY="47.0" startX="-68.0" stroke="#00ff25" strokeWidth="2.0" />
-                <Label fx:id="extLabel" alignment="CENTER" layoutX="91.0" layoutY="73.0" prefHeight="30.0" prefWidth="83.0" text="EXT" textFill="WHITE">
+                <Rectangle opacity="0.0" fx:id="extPwrRectangle" arcHeight="5.0" height="50.0" layoutX="107.0" layoutY="23.0" stroke="#00ff25" strokeType="INSIDE" strokeWidth="2.0" width="50.0" />
+                <CubicCurve opacity="0.0" fx:id="extPwrTransformerSign" controlX1="-50.0" controlX2="-51.0" controlY1="-30.0" controlY2="30.0" endX="-32.0" layoutX="182.0" layoutY="47.0" startX="-68.0" stroke="#00ff25" strokeWidth="2.0" />
+                <Label opacity="0.0" fx:id="extLabel" alignment="CENTER" layoutX="91.0" layoutY="73.0" prefHeight="30.0" prefWidth="83.0" text="EXT" textFill="WHITE">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Label>
-                <Label fx:id="pwrLabel" alignment="CENTER" layoutX="91.0" layoutY="91.0" prefHeight="30.0" prefWidth="83.0" text="PWR" textFill="WHITE">
+                <Label opacity="0.0" fx:id="pwrLabel" alignment="CENTER" layoutX="91.0" layoutY="91.0" prefHeight="30.0" prefWidth="83.0" text="PWR" textFill="WHITE">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Label>
-                <Label fx:id="extPwrVoltageValue" alignment="CENTER_RIGHT" layoutX="30.0" layoutY="18.0" prefHeight="30.0" prefWidth="44.0" text="115" textFill="#00ff25">
+                <Label opacity="0.0" fx:id="extPwrVoltageValue" alignment="CENTER_RIGHT" layoutX="30.0" layoutY="18.0" prefHeight="30.0" prefWidth="44.0" text="115" textFill="#00ff25">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Label>
-                <Label fx:id="extPwrVoltageSign" layoutX="76.0" layoutY="18.0" text="V" textFill="WHITE">
+                <Label opacity="0.0" fx:id="extPwrVoltageSign" layoutX="76.0" layoutY="18.0" text="V" textFill="WHITE">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Label>
-                <Label fx:id="extPwrFrequencyValue" alignment="CENTER_RIGHT" layoutX="30.0" layoutY="48.0" prefHeight="30.0" prefWidth="44.0" text="400" textFill="#00ff25">
+                <Label opacity="0.0" fx:id="extPwrFrequencyValue" alignment="CENTER_RIGHT" layoutX="30.0" layoutY="48.0" prefHeight="30.0" prefWidth="44.0" text="400" textFill="#00ff25">
                     <font>
                         <Font size="20.0" />
                     </font>
                 </Label>
-                <Label fx:id="extPwrFrequencySign" layoutX="76.0" layoutY="48.0" text="HZ" textFill="WHITE">
+                <Label opacity="0.0" fx:id="extPwrFrequencySign" layoutX="76.0" layoutY="48.0" text="HZ" textFill="WHITE">
                     <font>
                         <Font size="20.0" />
                     </font>

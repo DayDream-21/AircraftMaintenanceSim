@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1618.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.slavamashkov.bouncingball.controllers.MasterPaneController">
+   <children>
+      <Pane prefHeight="1000.0" prefWidth="868.0">
+         <fx:include fx:id="fxidSelectionPanel" source="selection-panel.fxml"/>
+      </Pane>
+      <Pane prefHeight="1000.0" prefWidth="750" layoutX="868.0">
+         <fx:include fx:id="fxidElecScreen" source="elec-screen.fxml"/>
+      </Pane>
+   </children>
+</AnchorPane>
