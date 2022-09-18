@@ -12,14 +12,14 @@
    <children>
       <ImageView fitHeight="1000.0" fitWidth="868.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="E:\SSJ\Pictures\SWP_OVERHEAD_PANEL_SSJ100_rev03(wo selector).jpg" />
+            <Image url="@../images/SWP_OVERHEAD_PANEL_SSJ100_rev03(wo selector).jpg" />
          </image>
       </ImageView>
       <Group fx:id="selectorGroup" layoutX="729.0" layoutY="663.0">
          <children>
             <ImageView fitHeight="49.0" fitWidth="65.0" layoutX="-6.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="E:\SSJ\Pictures\selector.png" />
+                  <Image url="@../images/selector.png" />
                </image>
             </ImageView>
          </children>

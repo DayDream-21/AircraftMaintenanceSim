@@ -7,6 +7,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 /**
  * 03.09.22 1224 строчки
@@ -20,7 +21,9 @@ public class SSJApplication extends Application {
 
             stage.setResizable(false);
             stage.setTitle("SSJ-100");
-            stage.getIcons().add(new Image("E:\\SSJ\\Pictures\\ssj100logo.png"));
+            stage.getIcons().add(new Image(
+                    Objects.requireNonNull(SSJApplication.class.getResourceAsStream("images/ssj100logo.png"))
+            ));
             stage.setScene(scene);
             stage.show();
         }
