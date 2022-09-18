@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1518.0" style="-fx-background-color: #489BDA;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fx:id="background" height="1000.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1518.0">
+         <fill>
+            <RadialGradient centerY="0.12322274881516587" focusAngle="10.91" focusDistance="-1.0" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.29019609093666077" green="0.6196078658103943" blue="0.8549019694328308" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.29019609093666077" green="0.6196078658103943" blue="0.8549019694328308" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4127107546243247">
+                     <color>
+                        <Color red="0.27450981736183167" green="0.5176470875740051" blue="0.7843137383460999" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6615853658536586">
+                     <color>
+                        <Color red="0.4117647111415863" green="0.615686297416687" blue="0.8313725590705872" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.0941176488995552" green="0.37254902720451355" blue="0.5921568870544434" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle fx:id="upper" fill="#33638e" height="60.0" opacity="0.4" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1518.0" />
+      <Rectangle fx:id="left" fill="#33638e" height="940.0" layoutY="60.0" opacity="0.4" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+      <ImageView fx:id="logo" fitHeight="60.0" fitWidth="170.0" layoutX="15.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Sukhoi_logo.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="buttons" layoutY="60.0" prefHeight="158.0" prefWidth="200.0" stylesheets="@css/landing-page-rectangle.css">
+         <children>
+            <StackPane prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Rectangle fill="#00367100" height="40.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="rec-button" width="200.0" />
+                  <Rectangle fill="#003671" height="40.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="rec-button-serif" width="8.0" StackPane.alignment="TOP_LEFT" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="rec-button-text" text="Sample Text 1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane layoutY="40.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Rectangle fill="#00367100" height="40.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="rec-button" width="200.0" />
+                  <Rectangle fill="#003671" height="40.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="rec-button-serif" width="8.0" StackPane.alignment="TOP_LEFT" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="rec-button-text" text="Sample Text 1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane layoutY="80.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Rectangle fill="#00367100" height="40.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="rec-button" width="200.0" />
+                  <Rectangle fill="#003671" height="40.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="rec-button-serif" width="8.0" StackPane.alignment="TOP_LEFT" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="rec-button-text" text="Sample Text 1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane layoutY="120.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Rectangle fill="#00367100" height="40.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="rec-button" width="200.0" />
+                  <Rectangle fill="#003671" height="40.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="rec-button-serif" width="8.0" StackPane.alignment="TOP_LEFT" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="rec-button-text" text="Sample Text 1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

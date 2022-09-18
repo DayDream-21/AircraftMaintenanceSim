@@ -1,0 +1,11 @@
+StackPane:hover > .rec-button-serif {
+    -fx-opacity: 1.0;
+}
+
+StackPane:hover > .rec-button {
+    -fx-fill: #4B9AD8;
+}
+
+StackPane:hover > .rec-button-text {
+    -fx-fill: #003671;
+}
