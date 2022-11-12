@@ -5,7 +5,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<Pane fx:controller="com.slavamashkov.bouncingball.controllers.ElecUnitsController" prefHeight="147.0" prefWidth="650.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:controller="com.slavamashkov.bouncingball.controllers.ElecUnitsController" prefHeight="147.0" prefWidth="650.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
     <children>
         <Pane fx:id="leftDrivePane" prefHeight="155.0" prefWidth="128.0">
             <children>

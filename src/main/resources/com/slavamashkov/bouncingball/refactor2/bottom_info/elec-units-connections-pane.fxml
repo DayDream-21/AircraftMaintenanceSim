@@ -7,7 +7,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="144.0" prefWidth="650.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.slavamashkov.bouncingball.controllers.ElecUnitsConnectionsController">
+<Pane prefHeight="144.0" prefWidth="650.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.slavamashkov.bouncingball.controllers.ElecUnitsConnectionsController">
     <children>
         <Pane fx:id="fromLeftDriveToLeft" opacity="0.0" prefHeight="147.0" prefWidth="650.0">
             <children>

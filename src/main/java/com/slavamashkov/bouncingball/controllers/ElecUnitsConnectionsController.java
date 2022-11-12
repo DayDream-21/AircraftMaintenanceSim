@@ -3,7 +3,7 @@ package com.slavamashkov.bouncingball.controllers;
 import javafx.fxml.FXML;
 import javafx.scene.layout.Pane;
 
-public class ElecUnitsConnectionsController {
+public class ElecUnitsConnectionsController implements Controller {
     @FXML private Pane fromLeftDriveToLeft;
     @FXML private Pane leftDriveInfoPane;
     @FXML private Pane fromRightDriveToRight;

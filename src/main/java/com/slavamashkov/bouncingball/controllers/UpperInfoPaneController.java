@@ -3,7 +3,7 @@ package com.slavamashkov.bouncingball.controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class UpperInfoPaneController {
+public class UpperInfoPaneController implements Controller {
     @FXML private Label bat1VoltageValue;
     @FXML private Label bat2VoltageValue;
     @FXML private Label bat3VoltageValue;

@@ -8,7 +8,7 @@ import javafx.scene.shape.CubicCurve;
 import javafx.scene.shape.Rectangle;
 import static com.slavamashkov.bouncingball.enums.Color.*;
 
-public class ElecUnitsController {
+public class ElecUnitsController implements Controller {
     // Left Engine
     @FXML private Rectangle leftDriveConnection;
     @FXML private Circle leftDriveTransformerCircle;

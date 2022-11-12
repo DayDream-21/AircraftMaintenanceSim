@@ -2,7 +2,7 @@ package com.slavamashkov.bouncingball.controllers;
 
 import javafx.fxml.FXML;
 
-public class BottomInfoPaneController {
+public class BottomInfoPaneController implements Controller {
     @FXML private ElecUnitsConnectionsController fxidElecUnitsConnectionsController;
     @FXML private ElecUnitsController fxidElecUnitsController;
 

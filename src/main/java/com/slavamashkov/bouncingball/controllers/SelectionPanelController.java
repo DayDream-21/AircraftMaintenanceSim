@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-public class SelectionPanelController {
+public class SelectionPanelController implements Controller {
     @FXML private Label batteryVoltageIndicator;
     @FXML private Rectangle invAllowedZone;
     @FXML private Rectangle leftGenAllowedZone;
@@ -18,7 +18,6 @@ public class SelectionPanelController {
     @FXML private Rectangle leftDriveAllowedZone;
     @FXML private Rectangle rightDriveAllowedZone;
     @FXML private Rectangle apuAllowedZone;
-    @FXML private Rectangle ratAllowedZone;
     @FXML private Rectangle extAllowedZone;
     @FXML private Rectangle bat1AllowedZone;
     @FXML private Rectangle bat2AllowedZone;
@@ -41,7 +40,6 @@ public class SelectionPanelController {
         } else {
             bottomInfoPaneController.deactivateExtPwr();
         }
-
     }
 
     @FXML private void changeDegree(MouseEvent mouseEvent) {

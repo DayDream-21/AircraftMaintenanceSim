@@ -9,26 +9,23 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-/**
- * 03.09.22 1224 строчки
- */
-
 public class SSJApplication extends Application {
-        @Override
-        public void start(Stage stage) throws IOException {
-            FXMLLoader fxmlLoader = new FXMLLoader(SSJApplication.class.getResource("refactor2/master-pane.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(SSJApplication.class.getResource("landing-page.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setResizable(false);
+        stage.setTitle("SSJ-100");
+        stage.getIcons().add(new Image(
+                Objects.requireNonNull(SSJApplication.class.getResourceAsStream("images/su_logo.png"))
+        ));
 
-            stage.setResizable(false);
-            stage.setTitle("SSJ-100");
-            stage.getIcons().add(new Image(
-                    Objects.requireNonNull(SSJApplication.class.getResourceAsStream("images/ssj100logo.png"))
-            ));
-            stage.setScene(scene);
-            stage.show();
-        }
+        stage.setScene(scene);
 
-        public static void main(String[] args) {
-            launch();
-        }
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
 }

@@ -6,7 +6,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="161.0" prefWidth="650.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.slavamashkov.bouncingball.controllers.UpperInfoPaneController">
+<Pane prefHeight="161.0" prefWidth="650.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.slavamashkov.bouncingball.controllers.UpperInfoPaneController">
     <children>
         <Pane fx:id="bat1" layoutX="140.0" prefHeight="161.0" prefWidth="75.0">
             <children>

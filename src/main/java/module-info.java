@@ -11,4 +11,6 @@ module com.slavamashkov.bouncingball {
 
     exports com.slavamashkov.bouncingball.enums;
     opens com.slavamashkov.bouncingball.enums to javafx.fxml;
+    exports com.slavamashkov.bouncingball.errors;
+    opens com.slavamashkov.bouncingball.errors to javafx.fxml;
 }

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -8,11 +13,13 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1518.0" style="-fx-background-color: #489BDA;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane stylesheets="@css/landing-page.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1518.0" style="-fx-background-color: #489BDA;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.slavamashkov.bouncingball.controllers.LandingPageController">
    <children>
       <Rectangle fx:id="background" height="1000.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1518.0">
          <fill>
@@ -48,14 +55,14 @@
          </fill>
       </Rectangle>
       <Rectangle fx:id="upper" fill="#33638e" height="60.0" opacity="0.4" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1518.0" />
-      <Rectangle fx:id="left" fill="#33638e" height="940.0" layoutY="60.0" opacity="0.4" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
       <ImageView fx:id="logo" fitHeight="60.0" fitWidth="170.0" layoutX="15.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/Sukhoi_logo.png" />
+            <Image url="@images/sukhoi_logo.png" />
          </image>
       </ImageView>
-      <Pane fx:id="buttons" layoutY="60.0" prefHeight="158.0" prefWidth="200.0" stylesheets="@css/landing-page-rectangle.css">
+      <Pane fx:id="buttons" layoutY="60.0" opacity="0.0" prefHeight="158.0" prefWidth="200.0">
          <children>
+            <Rectangle fx:id="left" fill="#33638e" height="940.0" opacity="0.4" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
             <StackPane prefHeight="40.0" prefWidth="200.0">
                <children>
                   <Rectangle fill="#00367100" height="40.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="rec-button" width="200.0" />
@@ -100,6 +107,32 @@
                   </Text>
                </children>
             </StackPane>
+         </children>
+      </Pane>
+      <Pane layoutX="389.0" layoutY="244.0" prefHeight="292.0" prefWidth="566.0">
+         <children>
+            <Rectangle fill="#1f93ff" focusTraversable="true" height="292.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="566.0">
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Rectangle>
+
+            <ComboBox fx:id="comboBox" layoutX="568.0" layoutY="2.0" prefWidth="150.0" value="No error"/>
+            <Pane layoutY="214.0" prefHeight="56.0" prefWidth="566.0">
+               <children>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Запуск">
+                     <font>
+                        <Font name="Open Sans Bold" size="41.0" />
+                     </font>
+                  </Text>
+                  <Pane styleClass="start-button-pane" onMouseClicked="#switchToSceneTwo" layoutX="437.0" layoutY="-72.0" prefHeight="200.0" prefWidth="200.0" scaleX="0.15" scaleY="0.15">
+                     <children>
+                        <Circle styleClass="start-button-circle" fill="WHITE" layoutX="100.0" layoutY="100.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                        <Polygon styleClass="start-button-triangle" fill="#1f93ff" layoutX="111.0" layoutY="108.0" points="-50.0, 40.0, 50.0, 40.0, 0.0, -60.0" rotate="90.0" scaleX="0.75" scaleY="0.75" stroke="#1f93ff" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="10.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
          </children>
       </Pane>
    </children>

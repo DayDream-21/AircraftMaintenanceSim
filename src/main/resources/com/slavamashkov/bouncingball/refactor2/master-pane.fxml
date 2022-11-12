@@ -2,7 +2,7 @@
 
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="1000.0" prefWidth="1618.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.slavamashkov.bouncingball.controllers.MasterPaneController">
+<AnchorPane prefHeight="1000.0" prefWidth="1618.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.slavamashkov.bouncingball.controllers.MasterPaneController">
    <children>
       <Pane prefHeight="1000.0" prefWidth="868.0">
          <fx:include fx:id="fxidSelectionPanel" source="selection-panel.fxml"/>

@@ -5,14 +5,15 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane stylesheets="@../css/selection-panel-rectangle.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.slavamashkov.bouncingball.controllers.SelectionPanelController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="868.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.slavamashkov.bouncingball.controllers.SelectionPanelController">
    <children>
       <ImageView fitHeight="1000.0" fitWidth="868.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/SWP_OVERHEAD_PANEL_SSJ100_rev03(wo selector).jpg" />
+            <Image url="@../images/overhead_panel.jpg" />
          </image>
       </ImageView>
       <Group fx:id="selectorGroup" layoutX="729.0" layoutY="663.0">
@@ -30,18 +31,20 @@
             <Font size="16.0" />
          </font>
       </Label>
-
-      <Rectangle fx:id="bat1AllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="49.0" layoutX="343.0" layoutY="556.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
-      <Rectangle fx:id="bat2AllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="49.0" layoutX="434.0" layoutY="556.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="46.0" />
-      <Rectangle fx:id="bat3AllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="49.0" layoutX="388.0" layoutY="556.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
-      <Rectangle fx:id="bat4AllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="49.0" layoutX="479.0" layoutY="556.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="46.0" />
-      <Rectangle fx:id="invAllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="49.0" layoutX="524.0" layoutY="556.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
-      <Rectangle fx:id="leftGenAllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="46.0" layoutX="298.0" layoutY="613.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="46.0" />
-      <Rectangle fx:id="rightGenAllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="46.0" layoutX="524.0" layoutY="613.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
-      <Rectangle fx:id="leftDriveAllowedZone" arcHeight="12.0" arcWidth="12.0" fill="#1f93ff00" height="50.0" layoutX="298.0" layoutY="660.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="46.0" />
-      <Rectangle fx:id="rightDriveAllowedZone" arcHeight="12.0" arcWidth="12.0" fill="#1f93ff00" height="50.0" layoutX="523.0" layoutY="660.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="46.0" />
-      <Rectangle fx:id="apuAllowedZone" arcHeight="12.0" arcWidth="12.0" fill="#1f93ff00" height="47.0" layoutX="357.0" layoutY="661.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="47.0" />
-      <Rectangle fx:id="ratAllowedZone" arcHeight="12.0" arcWidth="12.0" fill="#1f93ff00" height="50.0" layoutX="410.0" layoutY="660.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="47.0" />
-      <Rectangle fx:id="extAllowedZone" arcHeight="12.0" arcWidth="12.0" fill="#1f93ff00" height="47.0" layoutX="463.0" layoutY="661.0" onMouseClicked="#switchExtPowButton" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="47.0" />
+      <Pane layoutX="266.0" layoutY="548.0" prefHeight="164.0" prefWidth="332.0" stylesheets="@../css/selection-panel.css">
+         <children>
+            <Rectangle fx:id="bat1AllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="49.0" layoutX="77.0" layoutY="8.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+            <Rectangle fx:id="bat2AllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="49.0" layoutX="121.0" layoutY="8.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="46.0" />
+            <Rectangle fx:id="bat3AllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="49.0" layoutX="168.0" layoutY="8.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+            <Rectangle fx:id="bat4AllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="49.0" layoutX="213.0" layoutY="8.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="46.0" />
+            <Rectangle fx:id="invAllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="49.0" layoutX="258.0" layoutY="8.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+            <Rectangle fx:id="leftGenAllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="46.0" layoutX="32.0" layoutY="65.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="46.0" />
+            <Rectangle fx:id="rightGenAllowedZone" arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="46.0" layoutX="258.0" layoutY="65.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="45.0" />
+            <Rectangle fx:id="leftDriveAllowedZone" arcHeight="12.0" arcWidth="12.0" fill="#1f93ff00" height="50.0" layoutX="32.0" layoutY="112.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="46.0" />
+            <Rectangle fx:id="rightDriveAllowedZone" arcHeight="12.0" arcWidth="12.0" fill="#1f93ff00" height="50.0" layoutX="257.0" layoutY="112.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="46.0" />
+            <Rectangle fx:id="apuAllowedZone" arcHeight="12.0" arcWidth="12.0" fill="#1f93ff00" height="47.0" layoutX="91.0" layoutY="113.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="47.0" />
+            <Rectangle fx:id="extAllowedZone" arcHeight="12.0" arcWidth="12.0" fill="#1f93ff00" height="47.0" layoutX="197.0" layoutY="113.0" onMouseClicked="#switchExtPowButton" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="47.0" />
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
